@@ -11,7 +11,18 @@ class Ideone
 	{
 		String a = "Dit is een test Echter wil ik ook wel eens kijken of dit werkt haahaahaaa";
 		a = a.replace(" ","").toUpperCase();
- 
+ 		a = a.replace(".","");
+		a = a.replace("(","");
+		a = a.replace(")","");
+		a = a.replace(",","");
+		a = a.replace("?","");
+		a = a.replace("!","");
+		
+		for(int k = 0; k < 10; k++){
+			a = a.replace(String.valueOf(k), "");
+		}
+		
+		
 		char[] charArray = a.toCharArray();
  
 		for(int i = 0; i < charArray.length; i++){
